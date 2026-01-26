@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home — arb's Playground</title>
+    <link rel="stylesheet" href="storage/css/landing.css">
+    <link rel="stylesheet" href="storage/css/home.css">
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="overlay"></div>
+
+    <!-- Menu toggle -->
+    <button id="menuToggle" class="menu-toggle" aria-controls="sideMenu" aria-expanded="false" aria-label="Open site menu">☰</button>
+
+    <!-- Side menu (open by default on home) -->
+    <aside id="sideMenu" class="side-menu open" aria-hidden="false">
+      <button id="menuClose" class="menu-close" aria-label="Close menu">×</button>
+      <nav class="menu-nav" role="navigation" aria-label="Main navigation">
+        <a class="menu-link" href="/blog/">Blog</a>
+        <a class="menu-link" href="/guides/">Guides</a>
+        <a class="menu-link" href="/tools/">Tools</a>
+        <a class="menu-link" href="/writeups/">Writeups</a>
+        <a class="menu-link" href="/contact-me.html">Contact Me</a>
+      </nav>
+    </aside>
+
+    <main class="hero">
+      <div class="card">
+        <p class="lead">Welcome to my playground, <span class="em">my world.</span></p>
+        <p><span>Away from the loud politicians and mindless herds.</span></p>
+
+        <p><strong class="em">This is a place of knowledge for those who seek it.</strong></p>
+
+        <p><span class="em">Regardless of who you are, what you are, or where you are.</span></p>
+        <p>If knowledge is what you want, if growth is what you seek, <span class="em"></br>You are welcome here.</span></p>
+
+        <p class="signature">-arb34</p>
+      </div>
+    </main>
+
+    <footer class="site-footer" style="position:sticky;bottom:20px;color:var(--accent);font-size:0.95rem;margin-left: auto;margin-right: auto;text-align: center;">
+      <a href="#" style="margin-left:.5rem;color:var(--accent);text-decoration:underline">GitHub</a>
+      <a href="#" style="margin-left:1rem;color:var(--accent);text-decoration:underline">TryHackMe</a>
+    </footer>
+
+    <script>
+      // ensure toggle reflects open default on this page
+      (function(){
+        const toggle = document.getElementById('menuToggle');
+        if(toggle) toggle.setAttribute('aria-expanded','true');
+      })();
+    </script>
+    <script src="storage/js/menu.js" defer></script>
+  </body>
+</html>
